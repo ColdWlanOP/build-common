@@ -255,7 +255,7 @@ BRANCH_HEAD="$(git rev-parse --abbrev-ref HEAD)"
 if [[ "${OPERATES_BUILD}" == "1" ]]; then
   rm -rf backups
 fi
-if [[ "${GIT_REPOSITORY}" =~ (281677160/build-actions|281677160/autobuild) ]]; then
+if [[ "${GIT_REPOSITORY}" =~ (ColdWlanOP/ColdWlanOP|ColdWlanOP/autobuild) ]]; then
   rm -rf backups
   BANBEN_SHUOMING="Update $(date +%Y.%m%d.%H%M.%S)"
 fi
@@ -310,7 +310,7 @@ export DIY_PART_SH="$(grep -Eo "DIY_PART_SH=.*" "common.sh" |grep '.sh' |awk 'NR
 echo "DIY_PART_SH=${DIY_PART_SH}" >> ${GITHUB_ENV}
 if [[ -n "${BENDI_VERSION}" ]]; then
   export BENDI_VERSION="1"
-  export GIT_REPOSITORY="281677160/build-actions"
+  export GIT_REPOSITORY="ColdWlanOP/ColdWlanOP"
   sudo rm -rf build common.sh
   [[ -d "operates" ]] && cp -Rf operates build
   sed -i '/TONGBU_BENDI/d' ${GITHUB_ENV}

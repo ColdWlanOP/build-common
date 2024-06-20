@@ -1,6 +1,6 @@
 #!/bin/bash
-# https://github.com/281677160/build-actions
-# replace_file.sh Module by 28677160
+# https://github.com/ColdWlanOP/ColdWlanOP
+# replace_file.sh Module by WillWu
 
 if [[ $# -lt 1 ]]; then
   echo "格式错误,正确格式为: [\$svn] [文件夹或文件的链接] [需要替换的文件夹或文件的对应路径],分别以空格分隔"

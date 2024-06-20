@@ -1,6 +1,6 @@
 #!/bin/bash
-# https://github.com/281677160/build-actions
-# replace_file.sh Module by 28677160
+# https://github.com/ColdWlanOP/ColdWlanOP
+# replace_file.sh Module by WillWu
 
 function svn_co() {
 if [[ $# -lt 2 ]]; then
